@@ -1,11 +1,10 @@
-FROM debian:8.5
+FROM debian:8.8
 MAINTAINER Yuya.Nishida. <yuya@j96.org>
 
 RUN \
   set -x && \
-  export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
-  apt-get install -y --no-install-recommends openssh-server sudo && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends openssh-server sudo && \
 
   # "vagrant" User
   useradd -s /bin/bash vagrant && \
