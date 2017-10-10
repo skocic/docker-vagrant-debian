@@ -1,6 +1,6 @@
 # docker-vagrant-debian
 
-A Debian Docker image for Vagrant Docker provider.
+A Debian Docker image for Vagrant Docker provider. Forked from nishidayuya/docker-vagrant-debian
 
 This image is based on [official Debian image](https://hub.docker.com/_/debian/) and includes minimum Vagrant box features.
 
